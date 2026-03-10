@@ -18,15 +18,9 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
-       
 
-        Student::factory()->create([
-            'fullname' => 'Muhammad Irvan',
-            'nim' => 'E41241822',
-            'gender' => 'laki-laki',
-            'class' => 'E',
-        ]);
 
+        User::factory()->count(5)->create();
 
     }
 }
